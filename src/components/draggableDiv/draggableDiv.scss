@@ -1,0 +1,40 @@
+$bg-1: #70707092;
+$bg-2: #43434392;
+$spacing-0: 4px;
+$spacing-1: 8px;
+$spacing-2: 12px;
+$spacing-3: 16px;
+$spacing-4: 24px;
+
+$ubuntu-font: 'Ubuntu', 'Arial', 'Helvetica', sans-serif;
+
+.draggableDiv {
+    position: absolute;
+    background-color: $bg-1;
+    display: flex;
+    flex-direction: column;
+
+    /** TEMP **/
+    width: 200px;
+
+    .title {
+        background-color: $bg-1;
+        display: flex;
+        align-items: center;
+
+        :nth-child(2) {
+            flex-grow: 2;
+            padding: $spacing-1;
+        }
+
+        .handle {
+            padding: $spacing-1;
+            cursor: grab;
+        }
+    }
+
+    .content {
+        background-color: $bg-2;
+    }
+
+}
